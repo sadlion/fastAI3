@@ -63,19 +63,11 @@
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-            //labelContainer.childNodes[i].innerHTML = classPrediction;
-			if(prediction[0].className == "class 1" && prediction[0].probability.toFixed(2)== 1.00)        
-			{            
-				labelContainer.childNodes[0].innerHTML = "사과 먹어!";        }        
-			else if(prediction[1].className == "class 2" && prediction[1].probability.toFixed(2)== 1.00)        
-			{   
-				labelContainer.childNodes[0].innerHTML = "배 먹어!";        }        
-			else
-			{   
-				labelContainer.childNodes[0].innerHTML = "알 수 없음";        }	
-		}	
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+        }
     }
 </script>
+
 
 
 </body>
